@@ -1,0 +1,13 @@
+server:
+  port: 8060
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: ENC(s2rqCEwwn7JrCjAbhCoxqyTT2g1RnuwT)
+    url: jdbc:mysql://127.0.0.1:3306/sinosoft?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+  elasticjob:
+    zookeeper:
+      server-lists: 127.0.0.1:2181
+      namespace: ins-daemon
