@@ -8,9 +8,10 @@ spring:
 
 zuul:
   ribbon:
+    # 饥饿加载模式，以下微服务调用时才创建client，而非启动时
     eager-load:
       enabled: true
-      clients: ins-auth,ins-upms-service,ins-demo-service
+      clients: ins-auth-dev,ins-upms-service-dev,ins-demo-service-dev
   ignoredServices: '*'
   host:
     connect-timeout-millis: 10000
